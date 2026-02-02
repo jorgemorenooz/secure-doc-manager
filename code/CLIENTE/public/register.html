@@ -1,0 +1,57 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/usuario.css">
+    <link rel="stylesheet" href="./css/wrapper_wait.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2716/2716612.png">
+</head>
+<body>
+    <div class="menu-button">
+        <button onclick="location.href='../maliciousClient/malicious_index.html'">😈</button>
+    </div>
+
+    <div class="container_register">
+
+        <div class="botones">
+            <button id="loginButton" onclick="location.href='login.html'">Login</button>
+            <button id="registerButton" class="active" onclick="location.href='register.html'">Register</button>
+        </div>
+        <div class="form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username">
+            <label for="password">Contraseña:</label> 
+            <button id="autogenerateButton">Autogenerar</button>
+            <input type="text" id="password">
+            <div class="mensaje"></div> 
+            
+            <label for="confirmPassword">Confirmar contraseña:</label>
+            <input type="text" id="confirmPassword">
+
+            <label for="mail">Correo Electrónico:</label>
+            <input type="text" id="mail">
+            
+            <button id="botonRegistrar" onclick="register()">Register</button>
+        </div>
+    </div>
+    
+    <div class="container" id="loading">
+        <div class="loop cubes">
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+        </div>
+
+        <div class="text">Almacenando tus datos...</div>
+    </div>
+
+    <script src="../prueba.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+</html>

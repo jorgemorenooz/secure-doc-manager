@@ -1,0 +1,10 @@
+node_modules/
+assets/
+.DS_Store
+maliciousFolder/*
+.vscode/
+SERVIDOR_ALMACENAMIENTO/assets/db/usuarios.json
+files/*
+logs/*
+decompressed/*
+CLIENTE/diego_ppp.zip.enc

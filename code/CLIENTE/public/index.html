@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Gestor de Archivos</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/hamster-loader.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2716/2716612.png">
+</head>
+<body>
+
+    <div class="usuario">
+        <h3 class="nombre"></h3>
+        <button onclick="logOut()">Log Out</button>
+    </div>
+
+    <h1>Mi Gestor de Archivos</h1>
+
+    <div class="container">
+        <div class="texto_inseguro">Modo inseguro</div>
+        <div class="switch-button">
+            <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox" onchange="toggleModoInseguro()">
+            <label for="switch-label" class="switch-button__label"></label>
+        </div>
+      
+        
+        <button class="button-interfaz" onclick="desplegar()">Añadir nuevo archivo</button>
+        <div class="file-details invisible">
+            <input type="text" id="titulo" placeholder="Título">
+            <br>
+            <input type="text" id="descripcion" placeholder="Descripción">
+            <br>
+            <input type="text" id="autor" placeholder="Autor">
+            <br>
+            <input type="file" id="archivo" name="archivo" multiple>
+            <br>
+            <div class="file-list-usuarios">
+                <h2>Usuarios</h2>
+                <ul class="checklist">
+                </ul>
+            </div>
+            <br>
+            <button class="button-interfaz" onclick="guardarArchivo()">Aceptar</button>
+        </div>
+        <div class="file-list">
+            <h2>Archivos encriptados</h2>
+            <ul></ul>
+        </div>
+        <div class="file-list-compartidos">
+            <h2>Archivos compartidos</h2>
+            <ul></ul>
+        </div>
+        <div class="file-list-des">
+            <h2>Archivo desencriptado: </h2>
+            <ul></ul>
+            
+        </div>
+    </div>
+
+    <div class="container-hamster" id="loading">
+        <div aria-label="Orange and tan hamster running in a metal wheel"
+        style="left: 10%;"
+        role="img"
+        class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+
+        <div class="text typewriter">Subiendo archivo...</div>
+    </div>
+    <script src="prueba.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-interfaz {
+    display: block;
+    width: 15%;
+    padding: 10px;
+    background-color: #83bfff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.file-details input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.file-details{
+    margin-bottom: 10px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 25px; 
+}
+
+ul li:hover{
+    color: red;
+}
+
+.menu-button {
+    display: block;
+    margin: 10px;
+}
+
+.menu-button button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.archivo-desencriptado:hover{
+    cursor: pointer;
+    font-size: 20px;
+}

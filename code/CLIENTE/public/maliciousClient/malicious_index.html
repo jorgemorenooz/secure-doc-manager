@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Gestor de Archivos - MODO DIABLO</title>
+    <link rel="stylesheet" href="malicious_style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2716/2716612.png">
+</head>
+<body>
+    <div class="menu-button">
+        <button onclick="location.href='/'">👼</button>
+    </div>
+
+    <h1> 😈 Malicious Client 😈 </h1>
+    <div class="container">
+    
+        <div class="file-details invisible">
+            <h2>Introduzca Usuario: </h2>
+            <input class="user-input" type="text" id="archivo" name="archivo" accept=".enc" multiple> 
+            <div class = "listaUsuarios" style="display: none;">
+                <ul></ul>
+            </div>
+            <br>
+            <button class="button-interfaz">Aceptar</button>
+        </div>
+
+        <div id="listaZips" class="file-list-des" style="display: none;">
+            <h2> Documentos ZIP del Usuario: </h2>
+            <ul></ul> 
+        </div>
+
+        <div id="documentosDelZip" class="file-list-des" style="display: none;">
+            <h2> Documentos asociados al comprimido </h2>
+            <div class="info-comprimido"></div>
+            <ul></ul> 
+        </div>
+    </div>
+    
+    <script src="maliciousClient.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+</html>

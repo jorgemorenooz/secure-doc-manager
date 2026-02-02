@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+body.inseguro{
+    background-color: #fd7e7e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.file-details.invisible{
+    display: none;
+}
+
+.file-details{
+    display: block;
+}
+
+
+.texto_inseguro{
+    position: absolute;
+    left: 90%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-interfaz {
+    display: block;
+    width: 15%;
+    padding: 10px;
+    background-color: #83bfff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.file-details input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.file-details{
+    margin-bottom: 10px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 15px; 
+    margin: 15px;
+}
+
+li{
+    padding: 5px 0 5px 5px;
+    inline-size: 80%;
+}
+
+li:hover{
+    cursor: pointer;
+    border: solid 1px black;
+    background: #a7e6fc;
+    font-size: 20px;
+}
+
+
+:root {
+    --color-green: #007ea8;
+    --color-red: #170d80;
+    --color-button: #fdffff;
+    --color-black: #000;
+}
+.switch-button {
+    display: inline-block;
+    width: 93%;
+
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 5rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: inline-block;
+    left: 100%;
+    top: 40px;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2rem);
+}
+
+
+
+.menu-button {
+    display: block;
+    margin: 10px;
+}
+
+.menu-button button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.usuario {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex; /* Utilizar flexbox para organizar los elementos en línea */
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+.usuario h3 {
+    margin-right: 10px; /* Espacio entre el h3 y el botón */
+}
+
+.usuario button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.usuario button:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    width: 20px; 
+    height: 20px; 
+}
+
+input[type="checkbox"]:checked {
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
+
+input[type="checkbox"]:checked::after {
+    content: '\2713'; 
+    font-size: 14px;
+    color: #fff;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lista-usuarios-compartido, .lista-usuarios-sin-compartido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 15px; 
+}
+
+.lista-usuarios-compartido li, .lista-usuarios-sin-compartido li {
+    padding: 0px;
+}
+
+.lista-usuarios-compartido li:hover, .lista-usuarios-sin-compartido li:hover {
+    cursor:auto;
+    border: solid 0px rgb(255, 255, 255);
+    background: #ffffff;
+    font-size: 17px;
+}
+
+.nombre-usuario {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.quitar-permisos-btn:hover, .quitar-permisos-btn:hover {
+    background-color: #60b8fb;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+
+
+.contenedor-archivo {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.contenedor-archivo li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+.contenedor-archivo button {
+    display: inline;
+}
+
+.contenedor-archivo button:hover {
+    display: inline;
+    background-color: #810101;
+    color: white;
+}

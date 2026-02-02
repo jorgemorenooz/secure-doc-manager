@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Gestor de Archivos</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2716/2716612.png">
+</head>
+<body class="inseguro">
+    
+    <h1>Mi Gestor de Archivos</h1>
+    <div class="container">
+        
+
+        <button class="button-interfaz" onclick="desplegar()">Añadir nuevo archivo</button>
+        <div class="file-details invisible">
+            <input type="text" id="titulo" placeholder="Título">
+            <br>
+            <input type="text" id="descripcion" placeholder="Descripción">
+            <br>
+            <input type="text" id="autor" placeholder="Autor">
+            <br>
+            <input type="file" id="archivo" name="archivo" multiple>
+            <br>
+            <button class="button-interfaz" onclick="guardarArchivo()">Aceptar</button>
+        </div>
+        <div class="file-list">
+            <h2>Archivos encriptados</h2>
+            <ul></ul>
+        </div>
+        <div class="file-list-des">
+            <h2>Archivo desencriptado: </h2>
+            <ul></ul>
+            
+        </div>
+    </div>
+    <script src="prueba.js"></script>
+</body>
+</html>

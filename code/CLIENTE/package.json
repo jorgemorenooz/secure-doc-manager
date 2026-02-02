@@ -1,0 +1,28 @@
+{
+  "name": "es-adjm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "bcryptjs": "^2.4.3",
+    "compressing": "^1.10.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.2.0",
+    "https": "^1.0.0",
+    "js-sha3": "^0.9.3",
+    "jszip": "^3.10.1",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.13"
+  }
+}
