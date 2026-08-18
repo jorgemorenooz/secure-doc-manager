@@ -1,0 +1,11 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/code/SERVIDOR_ALMACENAMIENTO"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/code/CLIENTE"
+    schedule:
+      interval: "weekly"
