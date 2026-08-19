@@ -1,21 +1,9 @@
-name: Trivy Security Scan
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-permissions:
-  contents: read
-  security-events: write
+name: Security
+on: [push, pull_request]
 
 jobs:
-  trivy:
+  scan:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - uses: aquasecurity/trivy-action@master
@@ -24,4 +12,3 @@ jobs:
           severity: 'HIGH,CRITICAL'
           ignore-unfixed: true
           exit-code: '1'
-    
